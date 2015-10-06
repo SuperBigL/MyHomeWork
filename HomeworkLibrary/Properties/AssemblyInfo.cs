@@ -8,11 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("HomeworkLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("
-			")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("HomeworkLibrary")]
-[assembly: AssemblyCopyright("Copyright © 
-			 2015")]
+[assembly: AssemblyCopyright("Copyright © 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
