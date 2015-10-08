@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using HomeworkLibrary.Entities;
+using HomeworkLibrary.DAL;
+using HomeworkLibrary.BAL;
+using HomeworkLibrary.BLL;
+using HomeworkLibrary.BAL.Entities;
 
 
 
@@ -13,6 +17,91 @@ namespace HomeworkLibrary.BLL
     [DataObject]
     public class AdminController
     {
+
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Employees> EmployeeList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.EmployeeList
+                              orderby item.EmployeeID
+                              select item;
+                return results.ToList();
+
+
+            }
+
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Location> LocationList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.LocationList
+                              orderby item.LocationID
+                              select item;
+                return results.ToList();
+            }
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Skills> SkillList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.SkillList
+                              orderby item.SkillID
+                              select item;
+                return results.ToList();
+            }
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<PlacementContracts> PCList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.PCList
+                              orderby item.PlacementContractID
+                              select item;
+                return results.ToList();
+            }
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Schedules> ScheduleList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.ScheduleList
+                              orderby item.ScheduleID
+                              select item;
+                return results.ToList();
+            }
+
+        }
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<Shifts> ShiftList()
+        {
+            using (var context = new WorkScheduleContext())
+            {
+                var results = from item in context.ShiftList
+                              orderby item.ShiftID
+                              select item;
+                return results.ToList();
+            }
+
+        }
+
+
+
 
     }
 }

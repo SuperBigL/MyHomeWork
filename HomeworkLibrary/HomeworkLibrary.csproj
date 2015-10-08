@@ -48,19 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL\Entities\EmployeeSkills.cs" />
-    <Compile Include="BAL\Entities\PlacementContracts.cs" />
-    <Compile Include="BAL\Entities\Schedules.cs" />
-    <Compile Include="BAL\Entities\Shifts.cs" />
-    <Compile Include="BAL\Entities\Skills.cs" />
+    <Compile Include="DAL\Entities\EmployeeSkills.cs" />
+    <Compile Include="DAL\Entities\PlacementContracts.cs" />
+    <Compile Include="DAL\Entities\Schedules.cs" />
+    <Compile Include="DAL\Entities\Shifts.cs" />
+    <Compile Include="DAL\Entities\Skills.cs" />
     <Compile Include="BLL\AdminController.cs" />
-    <Compile Include="BAL\Entities\Employees.cs" />
-    <Compile Include="BAL\Entities\Location.cs" />
+    <Compile Include="DAL\Entities\Employees.cs" />
+    <Compile Include="DAL\Entities\Location.cs" />
+    <Compile Include="WorkScheduleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="WebConnect.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BAL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
