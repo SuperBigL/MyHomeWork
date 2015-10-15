@@ -23,5 +23,8 @@ namespace HomeworkLibrary.DAL
         public DbSet<Skills> SkillList { get; set;}
         public DbSet<Schedules> ScheduleList { get; set; }
 
+
+
+
     }
 }

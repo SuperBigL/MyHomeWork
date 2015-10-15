@@ -14,6 +14,7 @@ namespace HomeworkLibrary.BAL.Entities
     {
         [Key]
         public int ScheduleID { get; set; }
+        [Required(ErrorMessage="You must enter a day of the week")]
         public DateTime Day { get; set; }
          [Required(ErrorMessage = "You need a Shift ID")]
         public int ShiftID { get; set; }
