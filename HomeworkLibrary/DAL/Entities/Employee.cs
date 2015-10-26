@@ -22,7 +22,7 @@ namespace HomeworkLibrary
         [StringLength(50, ErrorMessage = "The Last Name must be between 1 and 50 alphabetical letters.")]
         public string LastName { get; set; }
         [Required(ErrorMessage="You need a phone number.")]
-        [RegularExpression(@"[0-9]{10,11}$")]
+        [RegularExpression(@"[1-9][0-9]{2}.[0-9]{3}.[0-9]{3}.[0-9]{4}$")]
         public string HomePhone { get; set; }
         public bool Active { get; set; }
 
