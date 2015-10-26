@@ -31,16 +31,15 @@ namespace HomeworkLibrary.Entities
         [Required(ErrorMessage = "Enter the phone.")]
         [StringLength(12, ErrorMessage = "The phone must be between 1 and 50 characters.")]
         public string Phone { get; set; }
-        [Required(ErrorMessage = "Is the location active or not?")]
         public bool Active { get; set; }
 
-        public virtual ICollection<PlacementContracts> PCList { get; set; }
-        public virtual ICollection<Shifts> ShiftList { get; set; }
-        public virtual ICollection<Employees> EmployeeList { get; set; }
-        public virtual ICollection<Schedules> ScheduleList { get; set; }
-        public virtual ICollection<Skills> SkillList { get; set; }
+        public virtual ICollection<PlacementContracts> PlacementContracts { get; set; }
+}
+
 
 
        
     }
-}
+
+
+

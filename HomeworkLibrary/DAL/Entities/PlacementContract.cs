@@ -21,11 +21,7 @@ namespace HomeworkLibrary.BAL.Entities
        [Required(ErrorMessage="You need a Location ID")]
        public int LocationID { get; set; }
 
-
-       public virtual ICollection<Location> LocationList { get; set; }
-       public virtual ICollection<Shifts> ShiftList { get; set; }
-       public virtual ICollection<Employees> EmployeeList { get; set; }
-       public virtual ICollection<Schedules> ScheduleList { get; set; }
-       public virtual ICollection<Skills> SkillList { get; set; }
+       public virtual Location Location { get; set; }
+       public virtual ICollection<Schedules> Schedules { get; set; }
     }
 }

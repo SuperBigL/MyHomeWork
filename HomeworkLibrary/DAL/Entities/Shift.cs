@@ -26,14 +26,12 @@ namespace HomeworkLibrary.BAL.Entities
         public int NumberOfEmployees { get; set; }
         [Required(ErrorMessage="You need to tell the system if it's active.")]
         public bool Active { get; set; }
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
 
 
-        public virtual ICollection<Location> LocationList { get; set; }
-        public virtual ICollection<PlacementContracts> PCList { get; set; }
-        public virtual ICollection<Employees> EmployeeList { get; set; }
-        public virtual ICollection<Schedules> ScheduleList { get; set; }
-        public virtual ICollection<Skills> SkillList { get; set; }
+        
+        public virtual PlacementContracts PlacementContracts { get; set; }
+        public virtual ICollection<Schedules> Schedules { get; set; }
 
     }
 }

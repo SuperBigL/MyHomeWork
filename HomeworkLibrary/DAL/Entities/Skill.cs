@@ -20,10 +20,6 @@ namespace HomeworkLibrary.BAL.Entities
         public bool RequiresTicket { get; set; }
 
 
-        public virtual ICollection<Location> LocationList { get; set; }
-        public virtual ICollection<PlacementContracts> PCList { get; set; }
-        public virtual ICollection<Employees> EmployeeList { get; set; }
-        public virtual ICollection<Schedules> ScheduleList { get; set; }
-        public virtual ICollection<Skills> SkillList { get; set; }
+        public virtual EmployeeSkills EmployeeSkills { get; set; }
     }
 }

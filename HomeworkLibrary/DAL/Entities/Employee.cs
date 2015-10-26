@@ -21,15 +21,13 @@ namespace HomeworkLibrary
         [Required(ErrorMessage="You need a last name.")]
         [StringLength(50, ErrorMessage = "The Last Name must be between 1 and 50 alphabetical letters.")]
         public string LastName { get; set; }
-        [Required(ErrorMessage="You need a phone number."), Range(10,12,ErrorMessage="The Phone Number must be between 10 and 12 numbers.")]
+        [Required(ErrorMessage="You need a phone number.")]
+        [RegularExpression(@"[0-9]{10,11}$")]
         public string HomePhone { get; set; }
-        [Required(ErrorMessage="Is the employee active or not?")]
         public bool Active { get; set; }
 
-        public virtual ICollection<Location> LocationList { get; set; }
-        public virtual ICollection<Shifts> ShiftList { get; set; }
-        public virtual ICollection<PlacementContracts> PCList { get; set; }
-        public virtual ICollection<Schedules> ScheduleList { get; set; }
-        public virtual ICollection<Skills> SkillList { get; set; }
+
+        public virtual ICollection<Shifts> Shifts { get; set; }
+        public virtual ICollection<Schedules> Schedules { get; set; }
     }
 }

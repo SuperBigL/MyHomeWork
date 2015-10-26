@@ -24,7 +24,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.EmployeeList
+                var results = from item in context.Employees
                               orderby item.EmployeeID
                               select item;
                 return results.ToList();
@@ -40,7 +40,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.LocationList
+                var results = from item in context.Locations
                               orderby item.LocationID
                               select item;
                 return results.ToList();
@@ -53,7 +53,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.SkillList
+                var results = from item in context.Skills
                               orderby item.SkillID
                               select item;
                 return results.ToList();
@@ -66,7 +66,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.PCList
+                var results = from item in context.PlacementContracts
                               orderby item.PlacementContractID
                               select item;
                 return results.ToList();
@@ -79,7 +79,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.ScheduleList
+                var results = from item in context.Schedules
                               orderby item.ScheduleID
                               select item;
                 return results.ToList();
@@ -92,7 +92,7 @@ namespace HomeworkLibrary.BLL
         {
             using (var context = new WorkScheduleContext())
             {
-                var results = from item in context.ShiftList
+                var results = from item in context.Shifts
                               orderby item.ShiftID
                               select item;
                 return results.ToList();

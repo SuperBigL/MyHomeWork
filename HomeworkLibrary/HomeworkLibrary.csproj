@@ -48,13 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\Entities\EmployeeSkills.cs" />
-    <Compile Include="DAL\Entities\PlacementContracts.cs" />
-    <Compile Include="DAL\Entities\Schedules.cs" />
-    <Compile Include="DAL\Entities\Shifts.cs" />
-    <Compile Include="DAL\Entities\Skills.cs" />
+    <Compile Include="DAL\Entities\EmployeeSkill.cs" />
+    <Compile Include="DAL\Entities\PlacementContract.cs" />
+    <Compile Include="DAL\Entities\Schedule.cs" />
+    <Compile Include="DAL\Entities\Shift.cs" />
+    <Compile Include="DAL\Entities\Skill.cs" />
     <Compile Include="BLL\AdminController.cs" />
-    <Compile Include="DAL\Entities\Employees.cs" />
+    <Compile Include="DAL\Entities\Employee.cs" />
     <Compile Include="DAL\Entities\Location.cs" />
     <Compile Include="WorkScheduleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

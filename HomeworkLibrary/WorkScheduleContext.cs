@@ -11,17 +11,18 @@ namespace HomeworkLibrary.DAL
 {
     public class WorkScheduleContext:DbContext
     {
-        public WorkScheduleContext() : base("name=WorkSchedule")
+        public WorkScheduleContext() : base("name=WS")
         {
 
         }
 
-        public DbSet<Employees> EmployeeList { get; set; }
-        public DbSet<Location> LocationList { get; set; }
-        public DbSet<PlacementContracts> PCList { get; set; }
-        public DbSet<Shifts> ShiftList { get; set; }
-        public DbSet<Skills> SkillList { get; set;}
-        public DbSet<Schedules> ScheduleList { get; set; }
+        public DbSet<Employees> Employees { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<PlacementContracts> PlacementContracts { get; set; }
+        public DbSet<Shifts> Shifts { get; set; }
+        public DbSet<Skills> Skills { get; set;}
+        public DbSet<Schedules> Schedules { get; set; }
+        public DbSet<EmployeeSkills> EmployeeSkills { get; set; }
 
 
 

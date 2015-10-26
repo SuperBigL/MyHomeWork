@@ -21,10 +21,7 @@ namespace HomeworkLibrary.BAL.Entities
         [Required(ErrorMessage="You need an Employee ID")]
         public int EmployeeID { get; set; }
 
-        public virtual ICollection<Location> LocationList { get; set; }
-        public virtual ICollection<Shifts> ShiftList { get; set; }
-        public virtual ICollection<Employees> EmployeeList { get; set; }
-        public virtual ICollection<PlacementContracts> PCList { get; set; }
-        public virtual ICollection<Skills> SkillList { get; set; }
+        public virtual Employees Employee { get; set; }
+        public virtual Shifts Shift { get; set; }
     }
 }

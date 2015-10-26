@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using HomeworkLibrary.DAL;
 
 namespace HomeworkLibrary.BAL.Entities
 {
@@ -19,7 +20,14 @@ namespace HomeworkLibrary.BAL.Entities
         public int SkillID { get; set; }
         [Required(ErrorMessage="You must have a Level")]
         public int Level { get; set; }
-        public int YearsOfExperience { get; set; }
+        public int? YearsOfExperience { get; set; }
+
+
+       
+        public virtual Employees Employee { get; set; }
+        
+        public virtual Skills Skills { get; set; }
+       
 
     }
 }
