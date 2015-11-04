@@ -26,6 +26,48 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:
 		SlnRelativePath = "..\HWSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Debug.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Release.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\HWSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWWebsite", "http://localhost:49980", "{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49980"
+		Debug.AspNetCompiler.PhysicalPath = "HWWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49980\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49980"
+		Release.AspNetCompiler.PhysicalPath = "HWWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49980\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "HWWebsite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +83,10 @@ Global
 		{8004BC41-3C29-4E61-8942-F31856416F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8004BC41-3C29-4E61-8942-F31856416F2F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{8004BC41-3C29-4E61-8942-F31856416F2F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
