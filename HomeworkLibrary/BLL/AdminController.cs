@@ -100,6 +100,7 @@ namespace HomeworkLibrary.BLL
 
         }
 
+<<<<<<< HEAD
         [DataObjectMethod(DataObjectMethodType.Insert, false)]
         public void Location_Add (Location item)
         {
@@ -124,6 +125,24 @@ namespace HomeworkLibrary.BLL
 
                 context.SaveChanges();
 
+=======
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+        public List<POCOs.EmployeeSkillsMenuItem> GetReportESMenuItems()
+        {
+            using (WorkScheduleContext context = new WorkScheduleContext())
+            {
+                var results = from cat in context.Skills
+                              orderby cat.Description
+                              select new POCOs.EmployeeSkillsMenuItem
+                              {
+                                  SkillDescription = cat.Description,
+                                  FullName = cat.EmployeeSkills.Employee.LastName + ", " + cat.EmployeeSkills.Employee.FirstName,
+                                  Contact = cat.EmployeeSkills.Employee.HomePhone,
+                                  YOE = Convert.ToInt32(cat.EmployeeSkills.YearsOfExperience)
+                              };
+                return results.ToList();
+ 
+>>>>>>> origin/master
             }
         }
 
