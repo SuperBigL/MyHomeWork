@@ -100,6 +100,33 @@ namespace HomeworkLibrary.BLL
 
         }
 
+        [DataObjectMethod(DataObjectMethodType.Insert, false)]
+        public void Location_Add (Location item)
+        {
+            using (WorkScheduleContext context = new WorkScheduleContext())
+            {
+                Location added = null;
+
+                added = context.Locations.Add(item);
+
+                context.SaveChanges();
+
+            }
+        }
+
+
+        [DataObjectMethod(DataObjectMethodType.Update, false)]
+        public void Location_Update(Location item)
+        {
+            using (WorkScheduleContext context = new WorkScheduleContext())
+            {
+                context.Entry<Location>(context.Locations.Attach(item)).State = System.Data.Entity.EntityState.Modified;
+
+                context.SaveChanges();
+
+            }
+        }
+
 
 
 

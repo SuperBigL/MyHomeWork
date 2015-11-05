@@ -26,7 +26,7 @@ namespace HomeworkLibrary.BAL.Entities
         public int NumberOfEmployees { get; set; }
         [Required(ErrorMessage="You need to tell the system if it's active.")]
         public bool Active { get; set; }
-        public string? Notes { get; set; }
+        public string Notes { get; set; }
 
 
         
