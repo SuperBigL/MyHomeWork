@@ -100,7 +100,7 @@ namespace HomeworkLibrary.BLL
 
         }
 
-<<<<<<< HEAD
+
         [DataObjectMethod(DataObjectMethodType.Insert, false)]
         public void Location_Add (Location item)
         {
@@ -125,7 +125,7 @@ namespace HomeworkLibrary.BLL
 
                 context.SaveChanges();
 
-=======
+
         [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<POCOs.EmployeeSkillsMenuItem> GetReportESMenuItems()
         {
