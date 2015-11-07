@@ -124,6 +124,8 @@ namespace HomeworkLibrary.BLL
                 context.Entry<Location>(context.Locations.Attach(item)).State = System.Data.Entity.EntityState.Modified;
 
                 context.SaveChanges();
+            }
+        }
 
 
         [DataObjectMethod(DataObjectMethodType.Select, false)]
@@ -142,7 +144,7 @@ namespace HomeworkLibrary.BLL
                               };
                 return results.ToList();
  
->>>>>>> origin/master
+
             }
         }
 
