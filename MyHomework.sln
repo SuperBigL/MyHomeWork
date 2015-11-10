@@ -5,7 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkLibrary", "HomeworkLibrary\HomeworkLibrary.csproj", "{0D266280-A6B6-44BA-8BEE-1BAD24ACA9D6}"
 EndProject
-<<<<<<< HEAD
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:51110", "{8004BC41-3C29-4E61-8942-F31856416F2F}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -28,13 +27,33 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:
 		SlnRelativePath = "..\HWSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0d266280-a6b6-44ba-8bee-1bad24aca9d6}|HomeworkLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Debug.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Release.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\HWSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
-=======
->>>>>>> origin/master
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWWebsite", "http://localhost:49980", "{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0d266280-a6b6-44ba-8bee-1bad24aca9d6}|HomeworkLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49980"
 		Debug.AspNetCompiler.PhysicalPath = "HWWebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49980\"
