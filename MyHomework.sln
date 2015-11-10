@@ -5,6 +5,7 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkLibrary", "HomeworkLibrary\HomeworkLibrary.csproj", "{0D266280-A6B6-44BA-8BEE-1BAD24ACA9D6}"
 EndProject
+<<<<<<< HEAD
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:51110", "{8004BC41-3C29-4E61-8942-F31856416F2F}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -28,6 +29,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+=======
+>>>>>>> origin/master
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWWebsite", "http://localhost:49980", "{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
@@ -60,10 +63,6 @@ Global
 		{0D266280-A6B6-44BA-8BEE-1BAD24ACA9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D266280-A6B6-44BA-8BEE-1BAD24ACA9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D266280-A6B6-44BA-8BEE-1BAD24ACA9D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8004BC41-3C29-4E61-8942-F31856416F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8004BC41-3C29-4E61-8942-F31856416F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8004BC41-3C29-4E61-8942-F31856416F2F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{8004BC41-3C29-4E61-8942-F31856416F2F}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
