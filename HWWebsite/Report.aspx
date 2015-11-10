@@ -2,10 +2,10 @@
 
 
 
-<asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+<asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="head">
 
 
-    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server"></asp:ObjectDataSource>
+
 
 
 </asp:Content>
