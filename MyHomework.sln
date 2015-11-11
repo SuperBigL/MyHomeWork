@@ -27,11 +27,33 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWSite", "http://localhost:
 		SlnRelativePath = "..\HWSite\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0d266280-a6b6-44ba-8bee-1bad24aca9d6}|HomeworkLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Debug.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51110"
+		Release.AspNetCompiler.PhysicalPath = "..\HWSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51110\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\HWSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HWWebsite", "http://localhost:49980", "{9D151183-C9E0-42C7-AA55-532E9B0F7E0A}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0d266280-a6b6-44ba-8bee-1bad24aca9d6}|HomeworkLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49980"
 		Debug.AspNetCompiler.PhysicalPath = "HWWebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49980\"

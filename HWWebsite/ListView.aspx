@@ -1,16 +1,24 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ListView.aspx.cs" Inherits="ListView" MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ListView.aspx.cs" Inherits="SamplePages_ScheduleGrid"  masterpagefile="~/MasterPage.master"%>
+
+<script runat="server">
+
+<<<<<<< HEAD
+
+=======
+    
+</script>
 
 
-
+>>>>>>> origin/master
 <asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <h1>My ListView</h1>
     <p>
-        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="LocationList" TypeName="HomeworkLibrary.BLL.AdminController"></asp:ObjectDataSource>
+        <asp:ObjectDataSource ID="LocationList" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="LocationList" TypeName="HomeworkLibrary.BLL.AdminController"></asp:ObjectDataSource>
     </p>
     <p>Action&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Location Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Street Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Province&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Contact Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         Active</p>
     <p>
-        <asp:LinkButton ID="Add" runat="server">Add</asp:LinkButton>
+        <asp:LinkButton ID="Add" runat="server" OnClick="Add_Click">Add</asp:LinkButton>
         <asp:TextBox ID="Location" runat="server" Width="187px"></asp:TextBox>
         <asp:TextBox ID="Street" runat="server"></asp:TextBox>
         <asp:TextBox ID="City" runat="server"></asp:TextBox>
@@ -24,7 +32,7 @@
     <p>
         <asp:ListView ID="ListView1" runat="server" DataSourceID="ObjectDataSource1">
             <AlternatingItemTemplate>
-                <tr style="background-color: #FFFFFF;color: #284775;">
+                <tr style="">
                     <td>
                         <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
                     </td>
@@ -55,7 +63,7 @@
                 </tr>
             </AlternatingItemTemplate>
             <EditItemTemplate>
-                <tr style="background-color: #999999;">
+                <tr style="">
                     <td>
                         <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
                         <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
@@ -90,7 +98,7 @@
                 </tr>
             </EditItemTemplate>
             <EmptyDataTemplate>
-                <table runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
+                <table runat="server" style="">
                     <tr>
                         <td>No data was returned.</td>
                     </tr>
@@ -132,7 +140,7 @@
                 </tr>
             </InsertItemTemplate>
             <ItemTemplate>
-                <tr style="background-color: #E0FFFF;color: #333333;">
+                <tr style="">
                     <td>
                         <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
                     </td>
@@ -166,8 +174,8 @@
                 <table runat="server">
                     <tr runat="server">
                         <td runat="server">
-                            <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
-                                <tr runat="server" style="background-color: #E0FFFF;color: #333333;">
+                            <table id="itemPlaceholderContainer" runat="server" border="0" style="">
+                                <tr runat="server" style="">
                                     <th runat="server">LocationID</th>
                                     <th runat="server">Name</th>
                                     <th runat="server">Street</th>
@@ -184,12 +192,12 @@
                         </td>
                     </tr>
                     <tr runat="server">
-                        <td runat="server" style="text-align: center;background-color: #5D7B9D;font-family: Verdana, Arial, Helvetica, sans-serif;color: #FFFFFF"></td>
+                        <td runat="server" style=""></td>
                     </tr>
                 </table>
             </LayoutTemplate>
             <SelectedItemTemplate>
-                <tr style="background-color: #E2DED6;font-weight: bold;color: #333333;">
+                <tr style="">
                     <td>
                         <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
                     </td>

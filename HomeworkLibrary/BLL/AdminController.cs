@@ -139,7 +139,7 @@ namespace HomeworkLibrary.BLL
                               {
                                   SkillDescription = cat.Description,
                                   FullName = cat.EmployeeSkills.Employee.LastName + ", " + cat.EmployeeSkills.Employee.FirstName,
-                                  Contact = cat.EmployeeSkills.Employee.HomePhone,
+                                  Phone = cat.EmployeeSkills.Employee.HomePhone,
                                   YOE = Convert.ToInt32(cat.EmployeeSkills.YearsOfExperience)
                               };
                 return results.ToList();
