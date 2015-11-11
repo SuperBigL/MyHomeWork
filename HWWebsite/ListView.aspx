@@ -1,9 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ListView.aspx.cs" Inherits="ListView" MasterPageFile="~/MasterPage.master" %>
 
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ScheduleGrid.aspx.cs" Inherits="SamplePAges_ScheduleGrid"  MasterPageFile="~/Site.master"%>
 
-<asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="MainContent">
+<asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <h1>My ListView</h1>
     <p>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="LocationList" TypeName="HomeworkLibrary.BLL.AdminController"></asp:ObjectDataSource>
