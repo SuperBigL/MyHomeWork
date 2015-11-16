@@ -15,14 +15,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="Textbox21">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>YOE</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
@@ -34,7 +34,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#7292cc</Color>
@@ -56,14 +56,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="YOE">
+                    <Textbox Name="FullName">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!YOE.Value)</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -73,172 +73,12 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>YOE</rd:DefaultName>
+                      <rd:DefaultName>FullName</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#e5e5e5</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox27">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Sum(Fields!YOE.Value)</Value>
-                              <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>#4c68a2</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox27</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>White</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#e6eefc</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox24">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Sum(Fields!YOE.Value)</Value>
-                              <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>#4c68a2</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox24</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#e6eefc</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#c6daf8</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox20">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Sum(Fields!YOE.Value)</Value>
-                              <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>#465678</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox20</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#c6daf8</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#9eb6e4</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox15">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Sum(Fields!YOE.Value)</Value>
-                              <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox15</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#9eb6e4</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#7292cc</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -262,7 +102,7 @@
               <TablixHeader>
                 <Size>1in</Size>
                 <CellContents>
-                  <Textbox Name="Textbox9">
+                  <Textbox Name="Textbox3">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
@@ -281,7 +121,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                    <rd:DefaultName>Textbox3</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>#7292cc</Color>
@@ -301,14 +141,14 @@
                   <TablixHeader>
                     <Size>1in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox7">
+                      <Textbox Name="Textbox16">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Full Name</Value>
+                                <Value />
                                 <Style>
                                   <FontFamily>Tahoma</FontFamily>
                                   <FontSize>11pt</FontSize>
@@ -320,7 +160,7 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox7</rd:DefaultName>
+                        <rd:DefaultName>Textbox16</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>#7292cc</Color>
@@ -340,14 +180,14 @@
                       <TablixHeader>
                         <Size>1in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox5">
+                          <Textbox Name="Textbox17">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Phone</Value>
+                                    <Value />
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <FontSize>11pt</FontSize>
@@ -359,7 +199,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                            <rd:DefaultName>Textbox17</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>#7292cc</Color>
@@ -379,26 +219,24 @@
                           <TablixHeader>
                             <Size>1in</Size>
                             <CellContents>
-                              <Textbox Name="Textbox3">
+                              <Textbox Name="Textbox18">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Level</Value>
+                                        <Value>=Count(Fields!FullName.Value)</Value>
                                         <Style>
                                           <FontFamily>Tahoma</FontFamily>
-                                          <FontSize>11pt</FontSize>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>White</Color>
+                                          <Color>#4d4d4d</Color>
                                         </Style>
                                       </TextRun>
                                     </TextRuns>
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>Textbox3</rd:DefaultName>
+                                <rd:DefaultName>Textbox18</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>#7292cc</Color>
@@ -414,7 +252,48 @@
                             </CellContents>
                           </TablixHeader>
                           <TablixMembers>
-                            <TablixMember />
+                            <TablixMember>
+                              <TablixHeader>
+                                <Size>1in</Size>
+                                <CellContents>
+                                  <Textbox Name="Textbox19">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value />
+                                            <Style>
+                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontSize>11pt</FontSize>
+                                              <FontWeight>Bold</FontWeight>
+                                              <Color>White</Color>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>Textbox19</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>#7292cc</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <BackgroundColor>#4c68a2</BackgroundColor>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixHeader>
+                              <TablixMembers>
+                                <TablixMember />
+                              </TablixMembers>
+                            </TablixMember>
                           </TablixMembers>
                         </TablixMember>
                       </TablixMembers>
@@ -424,27 +303,27 @@
               </TablixMembers>
             </TablixMember>
             <TablixMember>
-              <Group Name="SkillDescription">
+              <Group Name="FullName">
                 <GroupExpressions>
-                  <GroupExpression>=Fields!SkillDescription.Value</GroupExpression>
+                  <GroupExpression>=Fields!FullName.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
               <SortExpressions>
                 <SortExpression>
-                  <Value>=Fields!SkillDescription.Value</Value>
+                  <Value>=Fields!FullName.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
                 <Size>1in</Size>
                 <CellContents>
-                  <Textbox Name="SkillDescription">
+                  <Textbox Name="FullName1">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Fields!SkillDescription.Value</Value>
+                            <Value>=Fields!FullName.Value</Value>
                             <Style>
                               <FontFamily>Tahoma</FontFamily>
                               <FontWeight>Bold</FontWeight>
@@ -455,7 +334,7 @@
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>SkillDescription</rd:DefaultName>
+                    <rd:DefaultName>FullName1</rd:DefaultName>
                     <Style>
                       <Border>
                         <Color>#c6daf8</Color>
@@ -472,27 +351,27 @@
               </TablixHeader>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="FullName">
+                  <Group Name="Phone">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!FullName.Value</GroupExpression>
+                      <GroupExpression>=Fields!Phone.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!FullName.Value</Value>
+                      <Value>=Fields!Phone.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
                     <Size>1in</Size>
                     <CellContents>
-                      <Textbox Name="FullName">
+                      <Textbox Name="Phone">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!FullName.Value</Value>
+                                <Value>=Fields!Phone.Value</Value>
                                 <Style>
                                   <FontFamily>Tahoma</FontFamily>
                                   <FontWeight>Bold</FontWeight>
@@ -503,7 +382,7 @@
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>FullName</rd:DefaultName>
+                        <rd:DefaultName>Phone</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>#e6eefc</Color>
@@ -520,27 +399,27 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="Phone">
+                      <Group Name="Level">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!Phone.Value</GroupExpression>
+                          <GroupExpression>=Fields!Level.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!Phone.Value</Value>
+                          <Value>=Fields!Level.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
                         <Size>1in</Size>
                         <CellContents>
-                          <Textbox Name="Phone">
+                          <Textbox Name="Level">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!Phone.Value</Value>
+                                    <Value>=Fields!Level.Value</Value>
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <FontWeight>Bold</FontWeight>
@@ -551,7 +430,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Phone</rd:DefaultName>
+                            <rd:DefaultName>Level</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>White</Color>
@@ -568,27 +447,27 @@
                       </TablixHeader>
                       <TablixMembers>
                         <TablixMember>
-                          <Group Name="Level">
+                          <Group Name="YOE">
                             <GroupExpressions>
-                              <GroupExpression>=Fields!Level.Value</GroupExpression>
+                              <GroupExpression>=Fields!YOE.Value</GroupExpression>
                             </GroupExpressions>
                           </Group>
                           <SortExpressions>
                             <SortExpression>
-                              <Value>=Fields!Level.Value</Value>
+                              <Value>=Fields!YOE.Value</Value>
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
                             <Size>1in</Size>
                             <CellContents>
-                              <Textbox Name="Level">
+                              <Textbox Name="YOE">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>=Fields!Level.Value</Value>
+                                        <Value>=Fields!YOE.Value</Value>
                                         <Style>
                                           <FontFamily>Tahoma</FontFamily>
                                           <FontWeight>Bold</FontWeight>
@@ -599,7 +478,7 @@
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>Level</rd:DefaultName>
+                                <rd:DefaultName>YOE</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Color>White</Color>
@@ -615,428 +494,86 @@
                             </CellContents>
                           </TablixHeader>
                           <TablixMembers>
-                            <TablixMember />
+                            <TablixMember>
+                              <Group Name="SkillDescription">
+                                <GroupExpressions>
+                                  <GroupExpression>=Fields!SkillDescription.Value</GroupExpression>
+                                </GroupExpressions>
+                              </Group>
+                              <SortExpressions>
+                                <SortExpression>
+                                  <Value>=Fields!SkillDescription.Value</Value>
+                                </SortExpression>
+                              </SortExpressions>
+                              <TablixHeader>
+                                <Size>1in</Size>
+                                <CellContents>
+                                  <Textbox Name="SkillDescription">
+                                    <CanGrow>true</CanGrow>
+                                    <KeepTogether>true</KeepTogether>
+                                    <Paragraphs>
+                                      <Paragraph>
+                                        <TextRuns>
+                                          <TextRun>
+                                            <Value>=Fields!SkillDescription.Value</Value>
+                                            <Style>
+                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontWeight>Bold</FontWeight>
+                                              <Color>#4c68a2</Color>
+                                            </Style>
+                                          </TextRun>
+                                        </TextRuns>
+                                        <Style />
+                                      </Paragraph>
+                                    </Paragraphs>
+                                    <rd:DefaultName>SkillDescription</rd:DefaultName>
+                                    <Style>
+                                      <Border>
+                                        <Color>White</Color>
+                                        <Style>Solid</Style>
+                                      </Border>
+                                      <BackgroundColor>#e6eefc</BackgroundColor>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                  </Textbox>
+                                </CellContents>
+                              </TablixHeader>
+                              <TablixMembers>
+                                <TablixMember />
+                              </TablixMembers>
+                              <Visibility>
+                                <Hidden>true</Hidden>
+                                <ToggleItem>YOE</ToggleItem>
+                              </Visibility>
+                            </TablixMember>
                           </TablixMembers>
                           <Visibility>
                             <Hidden>true</Hidden>
-                            <ToggleItem>Phone</ToggleItem>
+                            <ToggleItem>Level</ToggleItem>
                           </Visibility>
-                        </TablixMember>
-                        <TablixMember>
-                          <TablixHeader>
-                            <Size>1in</Size>
-                            <CellContents>
-                              <Textbox Name="Textbox26">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value>Total</Value>
-                                        <Style>
-                                          <FontFamily>Tahoma</FontFamily>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>#4c68a2</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style />
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Textbox26</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Color>White</Color>
-                                    <Style>Solid</Style>
-                                  </Border>
-                                  <BackgroundColor>#e6eefc</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                          <KeepWithGroup>Before</KeepWithGroup>
                         </TablixMember>
                       </TablixMembers>
                       <Visibility>
                         <Hidden>true</Hidden>
-                        <ToggleItem>FullName</ToggleItem>
+                        <ToggleItem>Phone</ToggleItem>
                       </Visibility>
-                    </TablixMember>
-                    <TablixMember>
-                      <TablixHeader>
-                        <Size>1in</Size>
-                        <CellContents>
-                          <Textbox Name="Textbox22">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value>Total</Value>
-                                    <Style>
-                                      <FontFamily>Tahoma</FontFamily>
-                                      <FontWeight>Bold</FontWeight>
-                                      <Color>#4c68a2</Color>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style />
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Textbox22</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>#e6eefc</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <BackgroundColor>#c6daf8</BackgroundColor>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember>
-                          <TablixHeader>
-                            <Size>1in</Size>
-                            <CellContents>
-                              <Textbox Name="Textbox23">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value />
-                                        <Style>
-                                          <FontFamily>Tahoma</FontFamily>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>#4c68a2</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style />
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Textbox23</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Color>#e6eefc</Color>
-                                    <Style>Solid</Style>
-                                  </Border>
-                                  <BackgroundColor>#c6daf8</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                        </TablixMember>
-                      </TablixMembers>
-                      <KeepWithGroup>Before</KeepWithGroup>
                     </TablixMember>
                   </TablixMembers>
                   <Visibility>
                     <Hidden>true</Hidden>
-                    <ToggleItem>SkillDescription</ToggleItem>
+                    <ToggleItem>FullName1</ToggleItem>
                   </Visibility>
                 </TablixMember>
-                <TablixMember>
-                  <TablixHeader>
-                    <Size>1in</Size>
-                    <CellContents>
-                      <Textbox Name="Textbox17">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value>Total</Value>
-                                <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Bold</FontWeight>
-                                  <Color>#465678</Color>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox17</rd:DefaultName>
-                        <Style>
-                          <Border>
-                            <Color>#c6daf8</Color>
-                            <Style>Solid</Style>
-                          </Border>
-                          <BackgroundColor>#9eb6e4</BackgroundColor>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                        </Style>
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
-                  <TablixMembers>
-                    <TablixMember>
-                      <TablixHeader>
-                        <Size>1in</Size>
-                        <CellContents>
-                          <Textbox Name="Textbox18">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value />
-                                    <Style>
-                                      <FontFamily>Tahoma</FontFamily>
-                                      <FontWeight>Bold</FontWeight>
-                                      <Color>#465678</Color>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style />
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Textbox18</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>#c6daf8</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <BackgroundColor>#9eb6e4</BackgroundColor>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember>
-                          <TablixHeader>
-                            <Size>1in</Size>
-                            <CellContents>
-                              <Textbox Name="Textbox19">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value />
-                                        <Style>
-                                          <FontFamily>Tahoma</FontFamily>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>#465678</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style />
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Textbox19</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Color>#c6daf8</Color>
-                                    <Style>Solid</Style>
-                                  </Border>
-                                  <BackgroundColor>#9eb6e4</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                        </TablixMember>
-                      </TablixMembers>
-                    </TablixMember>
-                  </TablixMembers>
-                  <KeepWithGroup>Before</KeepWithGroup>
-                </TablixMember>
               </TablixMembers>
-            </TablixMember>
-            <TablixMember>
-              <TablixHeader>
-                <Size>1in</Size>
-                <CellContents>
-                  <Textbox Name="Textbox11">
-                    <CanGrow>true</CanGrow>
-                    <KeepTogether>true</KeepTogether>
-                    <Paragraphs>
-                      <Paragraph>
-                        <TextRuns>
-                          <TextRun>
-                            <Value>Total</Value>
-                            <Style>
-                              <FontFamily>Tahoma</FontFamily>
-                              <FontWeight>Bold</FontWeight>
-                              <Color>White</Color>
-                            </Style>
-                          </TextRun>
-                        </TextRuns>
-                        <Style />
-                      </Paragraph>
-                    </Paragraphs>
-                    <rd:DefaultName>Textbox11</rd:DefaultName>
-                    <Style>
-                      <Border>
-                        <Color>#9eb6e4</Color>
-                        <Style>Solid</Style>
-                      </Border>
-                      <BackgroundColor>#7292cc</BackgroundColor>
-                      <PaddingLeft>2pt</PaddingLeft>
-                      <PaddingRight>2pt</PaddingRight>
-                      <PaddingTop>2pt</PaddingTop>
-                      <PaddingBottom>2pt</PaddingBottom>
-                    </Style>
-                  </Textbox>
-                </CellContents>
-              </TablixHeader>
-              <TablixMembers>
-                <TablixMember>
-                  <TablixHeader>
-                    <Size>1in</Size>
-                    <CellContents>
-                      <Textbox Name="Textbox12">
-                        <CanGrow>true</CanGrow>
-                        <KeepTogether>true</KeepTogether>
-                        <Paragraphs>
-                          <Paragraph>
-                            <TextRuns>
-                              <TextRun>
-                                <Value />
-                                <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontWeight>Bold</FontWeight>
-                                  <Color>White</Color>
-                                </Style>
-                              </TextRun>
-                            </TextRuns>
-                            <Style />
-                          </Paragraph>
-                        </Paragraphs>
-                        <rd:DefaultName>Textbox12</rd:DefaultName>
-                        <Style>
-                          <Border>
-                            <Color>#9eb6e4</Color>
-                            <Style>Solid</Style>
-                          </Border>
-                          <BackgroundColor>#7292cc</BackgroundColor>
-                          <PaddingLeft>2pt</PaddingLeft>
-                          <PaddingRight>2pt</PaddingRight>
-                          <PaddingTop>2pt</PaddingTop>
-                          <PaddingBottom>2pt</PaddingBottom>
-                        </Style>
-                      </Textbox>
-                    </CellContents>
-                  </TablixHeader>
-                  <TablixMembers>
-                    <TablixMember>
-                      <TablixHeader>
-                        <Size>1in</Size>
-                        <CellContents>
-                          <Textbox Name="Textbox13">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value />
-                                    <Style>
-                                      <FontFamily>Tahoma</FontFamily>
-                                      <FontWeight>Bold</FontWeight>
-                                      <Color>White</Color>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style />
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Textbox13</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>#9eb6e4</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <BackgroundColor>#7292cc</BackgroundColor>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember>
-                          <TablixHeader>
-                            <Size>1in</Size>
-                            <CellContents>
-                              <Textbox Name="Textbox14">
-                                <CanGrow>true</CanGrow>
-                                <KeepTogether>true</KeepTogether>
-                                <Paragraphs>
-                                  <Paragraph>
-                                    <TextRuns>
-                                      <TextRun>
-                                        <Value />
-                                        <Style>
-                                          <FontFamily>Tahoma</FontFamily>
-                                          <FontWeight>Bold</FontWeight>
-                                          <Color>White</Color>
-                                        </Style>
-                                      </TextRun>
-                                    </TextRuns>
-                                    <Style />
-                                  </Paragraph>
-                                </Paragraphs>
-                                <rd:DefaultName>Textbox14</rd:DefaultName>
-                                <Style>
-                                  <Border>
-                                    <Color>#9eb6e4</Color>
-                                    <Style>Solid</Style>
-                                  </Border>
-                                  <BackgroundColor>#7292cc</BackgroundColor>
-                                  <PaddingLeft>2pt</PaddingLeft>
-                                  <PaddingRight>2pt</PaddingRight>
-                                  <PaddingTop>2pt</PaddingTop>
-                                  <PaddingBottom>2pt</PaddingBottom>
-                                </Style>
-                              </Textbox>
-                            </CellContents>
-                          </TablixHeader>
-                        </TablixMember>
-                      </TablixMembers>
-                    </TablixMember>
-                  </TablixMembers>
-                </TablixMember>
-              </TablixMembers>
-              <KeepWithGroup>Before</KeepWithGroup>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>EmployeeSkillDS</DataSetName>
-        <Height>1.5in</Height>
-        <Width>5in</Width>
+        <DataSetName>DataSet1</DataSetName>
+        <Height>0.5in</Height>
+        <Width>6in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1062,11 +599,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>d421b870-ca00-482f-bb11-0da8a1de7d3a</rd:DataSourceID>
+      <rd:DataSourceID>a1fe3288-1384-47b9-87c6-d4626318349c</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="EmployeeSkillDS">
+    <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>HomeworkLibraryBLL</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -1102,5 +639,5 @@
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>ae5d3b89-06f1-408e-8b30-f2ca4af4d144</rd:ReportID>
+  <rd:ReportID>3df4f247-2398-4ff6-a931-5268623cc5e6</rd:ReportID>
 </Report>
