@@ -2,14 +2,12 @@
 
 <script runat="server">
 
-<<<<<<< HEAD
 
-=======
     
 </script>
 
 
->>>>>>> origin/master
+
 <asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <h1>My ListView</h1>
     <p>
