@@ -12,6 +12,13 @@ namespace HomeworkLibrary.BAL.Entities
 {
     public class EmployeeSkills
     {
+        public enum SkillLevel
+        {
+            Novice,
+            Proficient,
+            Expert
+        }
+
         [Key]
         public int EmployeeSkillID { get; set; }
         [Required(ErrorMessage="You must have an EmployeeID")]
@@ -19,9 +26,8 @@ namespace HomeworkLibrary.BAL.Entities
         [Required(ErrorMessage="You must have a skillID")]
         public int SkillID { get; set; }
         [Required(ErrorMessage="You must have a Level")]
-        public int Level { get; set; }
         public int? YearsOfExperience { get; set; }
-
+        public SkillLevel Level { get; set; }
 
        
         public virtual Employees Employee { get; set; }

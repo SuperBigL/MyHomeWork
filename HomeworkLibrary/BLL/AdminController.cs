@@ -133,14 +133,15 @@ namespace HomeworkLibrary.BLL
         {
             using (WorkScheduleContext context = new WorkScheduleContext())
             {
-                var results = from cat in context.Skills
-                              orderby cat.Description
+                var results = from cat in context.EmployeeSkills
+                              orderby cat.Skills.Description
                               select new POCOs.EmployeeSkillsMenuItem
                               {
-                                  SkillDescription = cat.Description,
-                                  FullName = cat.EmployeeSkills.Employee.LastName + ", " + cat.EmployeeSkills.Employee.FirstName,
-                                  Phone = cat.EmployeeSkills.Employee.HomePhone,
-                                  YOE = Convert.ToInt32(cat.EmployeeSkills.YearsOfExperience)
+                                  SkillDescription = cat.Skills.Description,
+                                  FullName = cat.Employee.LastName + ", " + cat.Employee.FirstName,
+                                  Phone = cat.Employee.HomePhone,
+                                  Level = cat.Level.ToString(),
+                                  YOE = Convert.ToInt32(cat.YearsOfExperience)
                               };
                 return results.ToList();
  

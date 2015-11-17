@@ -2,19 +2,16 @@
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 <asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <h1>Employee Report</h1>
     <p>
         <asp:ObjectDataSource ID="ReportODS" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetReportESMenuItems" TypeName="HomeworkLibrary.BLL.AdminController"></asp:ObjectDataSource>
     </p>
-<<<<<<< HEAD
+
     <p>
         &nbsp;</p>
-=======
+
 
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 
@@ -37,7 +34,7 @@
 
 
 
->>>>>>> origin/master
+
 
 
 
