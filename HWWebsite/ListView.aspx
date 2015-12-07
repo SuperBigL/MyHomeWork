@@ -4,6 +4,11 @@
 
 
     
+    
+    protected void Edit_Click(object sender, EventArgs e)
+    {
+
+    }
 </script>
 
 <asp:Content ID="MainContent" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
@@ -15,86 +20,89 @@
         Active</p>
     <p>
         <asp:LinkButton ID="Add" runat="server" OnClick="Add_Click">Add</asp:LinkButton>
-        <asp:TextBox ID="Location" runat="server" Width="187px"></asp:TextBox>
-        <asp:TextBox ID="Street" runat="server"></asp:TextBox>
-        <asp:TextBox ID="City" runat="server"></asp:TextBox>
-        <asp:TextBox ID="Province" runat="server" OnTextChanged="TextBox4_TextChanged" Width="83px"></asp:TextBox>
+        <asp:TextBox ID="Location" runat="server" Width="187px" style="margin-left: 77px"></asp:TextBox>
+        <asp:TextBox ID="Street" runat="server" style="margin-left: 41px"></asp:TextBox>
+        <asp:TextBox ID="City" runat="server" style="margin-left: 18px"></asp:TextBox>
+        <asp:TextBox ID="Province" runat="server" OnTextChanged="TextBox4_TextChanged" Width="86px" style="margin-left: 35px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="Contact" runat="server"></asp:TextBox>
-        <asp:TextBox ID="PhoneNumber" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Contact" runat="server" style="margin-left: 57px"></asp:TextBox>
+        <asp:TextBox ID="PhoneNumber" runat="server" style="margin-left: 36px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:CheckBox ID="Active" runat="server" />
     </p>
     <p>
-        <asp:ListView ID="ListView1" runat="server" DataSourceID="ObjectDataSource1">
+        <asp:ListView ID="LocationGrid" runat="server" DataSourceID="LocationList">
             <AlternatingItemTemplate>
-                <tr style="">
+                <tr style="background-color:#FFF8DC;">
                     <td>
-                        <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
+                        <asp:LinkButton ID="Edit" runat="server" OnClick="Edit_Click">Edit</asp:LinkButton>
+
                     </td>
                     <td>
-                        <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
+                        <asp:DynamicControl runat="server" DataField="LocationID" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="StreetLabel" runat="server" Text='<%# Eval("Street") %>' />
+                        <asp:DynamicControl runat="server" DataField="Name" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="CityLabel" runat="server" Text='<%# Eval("City") %>' />
+                        <asp:DynamicControl runat="server" DataField="Street" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ProvinceLabel" runat="server" Text='<%# Eval("Province") %>' />
+                        <asp:DynamicControl runat="server" DataField="City" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ContactLabel" runat="server" Text='<%# Eval("Contact") %>' />
+                        <asp:DynamicControl runat="server" DataField="Province" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
+                        <asp:DynamicControl runat="server" DataField="Contact" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
+                        <asp:DynamicControl runat="server" DataField="Phone" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PlacementContractsLabel" runat="server" Text='<%# Eval("PlacementContracts") %>' />
+                        <asp:DynamicControl runat="server" DataField="Active" Mode="ReadOnly" />
+                    </td>
+                    <td>
+                        <asp:DynamicControl runat="server" DataField="PlacementContracts" Mode="ReadOnly" />
                     </td>
                 </tr>
             </AlternatingItemTemplate>
             <EditItemTemplate>
-                <tr style="">
+                <tr style="background-color:#008A8C;color: #FFFFFF;">
                     <td>
-                        <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
-                        <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
+                        <asp:LinkButton ID="Edit" runat="server" OnClick="Edit_Click">Edit</asp:LinkButton>
                     </td>
                     <td>
-                        <asp:TextBox ID="LocationIDTextBox" runat="server" Text='<%# Bind("LocationID") %>' />
+                        <asp:DynamicControl runat="server" DataField="LocationID" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
+                        <asp:DynamicControl runat="server" DataField="Name" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="StreetTextBox" runat="server" Text='<%# Bind("Street") %>' />
+                        <asp:DynamicControl runat="server" DataField="Street" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' />
+                        <asp:DynamicControl runat="server" DataField="City" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="ProvinceTextBox" runat="server" Text='<%# Bind("Province") %>' />
+                        <asp:DynamicControl runat="server" DataField="Province" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="ContactTextBox" runat="server" Text='<%# Bind("Contact") %>' />
+                        <asp:DynamicControl runat="server" DataField="Contact" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
+                        <asp:DynamicControl runat="server" DataField="Phone" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
+                        <asp:DynamicControl runat="server" DataField="Active" Mode="Edit" />
                     </td>
                     <td>
-                        <asp:TextBox ID="PlacementContractsTextBox" runat="server" Text='<%# Bind("PlacementContracts") %>' />
+                        <asp:DynamicControl runat="server" DataField="PlacementContracts" Mode="Edit" />
                     </td>
                 </tr>
             </EditItemTemplate>
             <EmptyDataTemplate>
-                <table runat="server" style="">
+                <table runat="server" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;">
                     <tr>
                         <td>No data was returned.</td>
                     </tr>
@@ -103,66 +111,68 @@
             <InsertItemTemplate>
                 <tr style="">
                     <td>
-                        <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
-                        <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
+                        <asp:LinkButton ID="Edit" runat="server" OnClick="Edit_Click">Edit</asp:LinkButton>
                     </td>
                     <td>
-                        <asp:TextBox ID="LocationIDTextBox" runat="server" Text='<%# Bind("LocationID") %>' />
+                        <asp:DynamicControl runat="server" DataField="LocationID" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
+                        <asp:DynamicControl runat="server" DataField="Name" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="StreetTextBox" runat="server" Text='<%# Bind("Street") %>' />
+                        <asp:DynamicControl runat="server" DataField="Street" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="CityTextBox" runat="server" Text='<%# Bind("City") %>' />
+                        <asp:DynamicControl runat="server" DataField="City" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="ProvinceTextBox" runat="server" Text='<%# Bind("Province") %>' />
+                        <asp:DynamicControl runat="server" DataField="Province" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="ContactTextBox" runat="server" Text='<%# Bind("Contact") %>' />
+                        <asp:DynamicControl runat="server" DataField="Contact" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="PhoneTextBox" runat="server" Text='<%# Bind("Phone") %>' />
+                        <asp:DynamicControl runat="server" DataField="Phone" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Bind("Active") %>' />
+                        <asp:DynamicControl runat="server" DataField="Active" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                     <td>
-                        <asp:TextBox ID="PlacementContractsTextBox" runat="server" Text='<%# Bind("PlacementContracts") %>' />
+                        <asp:DynamicControl runat="server" DataField="PlacementContracts" Mode="Insert" ValidationGroup="Insert" />
                     </td>
                 </tr>
             </InsertItemTemplate>
             <ItemTemplate>
-                <tr style="">
+                <tr style="background-color:#DCDCDC;color: #000000;">
                     <td>
-                        <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
+                        <asp:DynamicControl runat="server" DataField="Edit" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
+                        <asp:DynamicControl runat="server" DataField="LocationID" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="StreetLabel" runat="server" Text='<%# Eval("Street") %>' />
+                        <asp:DynamicControl runat="server" DataField="Name" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="CityLabel" runat="server" Text='<%# Eval("City") %>' />
+                        <asp:DynamicControl runat="server" DataField="Street" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ProvinceLabel" runat="server" Text='<%# Eval("Province") %>' />
+                        <asp:DynamicControl runat="server" DataField="City" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ContactLabel" runat="server" Text='<%# Eval("Contact") %>' />
+                        <asp:DynamicControl runat="server" DataField="Province" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
+                        <asp:DynamicControl runat="server" DataField="Contact" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
+                        <asp:DynamicControl runat="server" DataField="Phone" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PlacementContractsLabel" runat="server" Text='<%# Eval("PlacementContracts") %>' />
+                        <asp:DynamicControl runat="server" DataField="Active" Mode="ReadOnly" />
+                    </td>
+                    <td>
+                        <asp:DynamicControl runat="server" DataField="PlacementContracts" Mode="ReadOnly" />
                     </td>
                 </tr>
             </ItemTemplate>
@@ -170,8 +180,9 @@
                 <table runat="server">
                     <tr runat="server">
                         <td runat="server">
-                            <table id="itemPlaceholderContainer" runat="server" border="0" style="">
-                                <tr runat="server" style="">
+                            <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
+                                <tr runat="server" style="background-color:#DCDCDC;color: #000000;">
+                                    <th runat="server">Edit</th>
                                     <th runat="server">LocationID</th>
                                     <th runat="server">Name</th>
                                     <th runat="server">Street</th>
@@ -188,38 +199,49 @@
                         </td>
                     </tr>
                     <tr runat="server">
-                        <td runat="server" style=""></td>
+                        <td runat="server" style="text-align: center;background-color: #CCCCCC;font-family: Verdana, Arial, Helvetica, sans-serif;color: #000000;">
+                            <asp:DataPager ID="DataPager1" runat="server">
+                                <Fields>
+                                    <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                    <asp:NumericPagerField />
+                                    <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                </Fields>
+                            </asp:DataPager>
+                        </td>
                     </tr>
                 </table>
             </LayoutTemplate>
             <SelectedItemTemplate>
-                <tr style="">
+                <tr style="background-color:#008A8C;font-weight: bold;color: #FFFFFF;">
+                  <td>
+                      <asp:DynamicControl runat="server" DataField="Edit" Mode="Edit" />
+                  </td>
                     <td>
-                        <asp:Label ID="LocationIDLabel" runat="server" Text='<%# Eval("LocationID") %>' />
+                        <asp:DynamicControl runat="server" DataField="LocationID" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
+                        <asp:DynamicControl runat="server" DataField="Name" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="StreetLabel" runat="server" Text='<%# Eval("Street") %>' />
+                        <asp:DynamicControl runat="server" DataField="Street" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="CityLabel" runat="server" Text='<%# Eval("City") %>' />
+                        <asp:DynamicControl runat="server" DataField="City" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ProvinceLabel" runat="server" Text='<%# Eval("Province") %>' />
+                        <asp:DynamicControl runat="server" DataField="Province" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="ContactLabel" runat="server" Text='<%# Eval("Contact") %>' />
+                        <asp:DynamicControl runat="server" DataField="Contact" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
+                        <asp:DynamicControl runat="server" DataField="Phone" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:CheckBox ID="ActiveCheckBox" runat="server" Checked='<%# Eval("Active") %>' Enabled="false" />
+                        <asp:DynamicControl runat="server" DataField="Active" Mode="ReadOnly" />
                     </td>
                     <td>
-                        <asp:Label ID="PlacementContractsLabel" runat="server" Text='<%# Eval("PlacementContracts") %>' />
+                        <asp:DynamicControl runat="server" DataField="PlacementContracts" Mode="ReadOnly" />
                     </td>
                 </tr>
             </SelectedItemTemplate>
